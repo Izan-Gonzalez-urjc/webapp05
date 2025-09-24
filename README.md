@@ -1,25 +1,42 @@
 # **TCG DEVS**
 
-### David Esteban Bernardo / d.estebanb.2022@alumnos.urjc.es / Daviid24x
-### Mario Aparisi Castro / m.aparisi.2022@alumnos.urjc.es / Aparisi02
-### Javier Rodríguez Gil / j.rodriguezgi.2024@alumnos.urjc.es / javrodr19
-### Izan Gonzalez Cuevas / i.gonzalezcu.2022@alumnos.urjc.es / Izan-Gonzalez-urjc
+| Nombre  | Correo | Github |
+| :-------------:|:-------------:| :-------------: |
+|David Esteban Bernardo|d.estebanb.2022@alumnos.urjc.es|Daviid24x| 
+|Mario Aparisi Castro|m.aparisi.2022@alumnos.urjc.es|Aparisi02|
+|Izan Gonzalez Cuevas|i.gonzalezcu.2022@alumnos.urjc.es|Izan-Gonzalez-urjc|
+|Javier Rodríguez Gil|j.rodriguezgi.2024@alumnos.urjc.es|javrodr19|
 
 ## **Functionality**
 ### Entities
-Main Entity: Pokémon Card
+Main Entity: `Pokémon Card`
 
-Main Entity Attributes: Name, Price
+Main Entity Attributes: 
+* `card_name`
+* `card_price`
+* `card_image`
+* `description`
+* `illustrator`
+* `release_date`
+* `collection_number`
 
-Secondary Entity: Pokémon Card Review
+Secondary Entity: `Pokémon Card Review`
 
-Secondary Entity Attributes: Description, Illustrator, Release Date, Audience Rating, Collection
+Secondary Entity Attributes: 
+* `nickname`
+* `review_date`
+* `opinion`
+* `rating`
 
 ### Images
-Each main entity will have a single associated image.
+Each main entity will have a single associated `card_image`.
 
 ### Categorization
-Each card will be divided according to its collection.
+Each card will be divided according to its `collection_number`.
+
+Yo can filter each card by `card_name`.
+
+
 
 
 
