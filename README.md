@@ -18,7 +18,7 @@ Main Entity Attributes:
 * `description`
 * `illustrator`
 * `release_date`
-* `collection_number`
+* `collection` (Crown Zenith, Paradox Rift, Black Bolt, 151, Plasma Storm, Legendary Treasures)
 
 Secondary Entity: `Pokémon Card Review`
 
