@@ -1,6 +1,6 @@
 # **TCG DEVS**
 
-| Nombre  | Correo | Github |
+| Name  | Adress | Github |
 | :-------------:|:-------------:| :-------------: |
 |David Esteban Bernardo|d.estebanb.2022@alumnos.urjc.es|Daviid24x| 
 |Mario Aparisi Castro|m.aparisi.2022@alumnos.urjc.es|Aparisi02|
