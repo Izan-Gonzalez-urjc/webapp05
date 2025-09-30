@@ -1,0 +1,330 @@
+/* ===============================
+    BANNER POKÉMON - ESTILOS PRINCIPALES
+   =============================== */
+
+.pokemon-banner {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.banner-content {
+    min-height: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+/* ===============================
+    SECCIÓN DEL LOGO
+   =============================== */
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Pokeball Logo CSS */
+.pokeball-logo {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.pokeball-logo:hover {
+    transform: rotate(360deg);
+}
+
+.pokeball-top {
+    width: 100%;
+    height: 50%;
+    background: #FF3838;
+    border-radius: 60px 60px 0 0;
+    position: relative;
+}
+
+.pokeball-bottom {
+    width: 100%;
+    height: 50%;
+    background: #FFFFFF;
+    border-radius: 0 0 60px 60px;
+    position: relative;
+}
+
+.pokeball-middle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #333333;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeball-button {
+    width: 18px;
+    height: 18px;
+    background: #FFFFFF;
+    border: 3px solid #333333;
+    border-radius: 50%;
+}
+
+/* Texto de la marca */
+.brand-text {
+    text-align: left;
+}
+
+.store-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+}
+
+.store-tagline {
+    font-size: 1rem;
+    color: #FFE066;
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+    NAVEGACIÓN
+   =============================== */
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFE066;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+    DECORACIÓN CON PATRONES
+   =============================== */
+
+.banner-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.pattern-element {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.pattern-1 {
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+    top: 10%;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.pattern-2 {
+    width: 60px;
+    height: 60px;
+    background: #FFE066;
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+
+/* ===============================
+    SECCIÓN PRINCIPAL DE CARTAS
+   =============================== */
+
+.store-main {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 0;
+}
+
+/* ===============================
+    GRID DE CARTAS POKÉMON
+   =============================== */
+
+/* Grid de cartas usando Bootstrap */
+
+.pokemon-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Imagen de la carta */
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* FONDO PARA USAR EN LAS CARTAS */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pokemon-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.btn-view-details {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.pokemon-card:hover .btn-view-details {
+    transform: translateY(0);
+}
+
+.btn-view-details:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+/* Contenido de la carta */
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card-collection {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.card-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+/* FIN DE LA PÁGINA PRINCIPAL */
