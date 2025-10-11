@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="style/style.css" rel="stylesheet">
         <title>Create a new card</title>
-    </head>
-    <header>    
-        <div style="text-align: center;">
-        <h1> Create a new card</h1>
+    </head>   
+    <body class="store-main">
+    <header class="pokemon-banner" style="margin-bottom: 20px;">
+        <div class="container-fluid">
+            <div class="row align-items-center banner-content">
+                <!-- Logo y nombre -->
+                <div class="col-12 col-md-6 logo-section">
+                    <div class="logo-container">
+                        <div class="pokeball-logo">
+                            <div class="pokeball-top"></div>
+                            <div class="pokeball-middle">
+                                <div class="pokeball-button"></div>
+                            </div>
+                            <div class="pokeball-bottom"></div>
+                        </div>
+                        <div class="brand-text">
+                            <h1 class="store-name">TCG DEVS</h1>
+                            <p class="store-tagline">Tu tienda de cartas Pokémon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-12 col-md-6 nav-section">
+                    <nav class="banner-nav">
+                        <ul class="nav-links">
+                            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                            <li><a href="#cartas" class="nav-link">Cartas</a></li>
+                            <li><a href="#sobres" class="nav-link">Sobres</a></li>
+                            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decoración con patrones -->
+        <div class="banner-decoration">
+            <div class="pattern-element pattern-1"></div>
+            <div class="pattern-element pattern-2"></div>
+            <div class="pattern-element pattern-3"></div>
         </div>
     </header>
-    <body style="background-color: rgb(255, 255, 255)">
+    <main>
+        <div></div>
         <div style="text-align: center;">
         <form>
             <label for="pokemon_name">Name</label>
@@ -20,7 +59,7 @@
         </form>
         <form>
             <label for ="colection">Colection</label>
-            <select name ="Tipo" id = "colection">
+            <select name ="Colection" id = "colection">
                 <option value="" disabled selected hidden>-----</option>
                 <option value="PlasmaStorm">Plasma Storm</option>
                 <option value="LegendaryTreasures">Legendary Trasures</option>
@@ -40,12 +79,13 @@
         </form>
         <form>
             <label for="illustrator">Illustrator</label>
-            <input type="text" id="illustrator" name="Illustrator" placeholder="Name of the card`s illustrator">
+            <input type="text" id="illustrator" name="Illustrator" placeholder="Name of the card's illustrator">
         </form>
         <form>
-            <input type="button" value="Cancelar" onclick="window.location.href='index.html'">
-            <input type="submit" value="Guardar">
+            <input type="button" value="Cancel" onclick="window.location.href='index.html'">
+            <input type="submit" value="Save"> <!--Not implemented-->
         </form>
         </div>
+    </main>
     </body>
 </html>
