@@ -53,49 +53,89 @@
         </div>
     </header>
 
-    <!--Main page start-->
-        
+        <!--Main page start-->
+             
     <main>
         <div class="container" style="text-align: center;">
-            <div>
-                <form role="form">
-                    <div class="form-group">
-                        <label for="pokemon_name">Name</label>
-                        <input type="text" id="pokemon_name" name="Name" placeholder="Name of the pokemon card" required>
+            <div class="row mb-8">
+                <div class="form-header">
+                    <h1>Create a new pokemon card</h1>
+                <div class="form-main-border"> <!--Styling for the block-->
+                    <div class="form-main-body">
+                        <div class="form-main-content"> 
+                            <form role="form">
+                                <div class="row mb-3">
+
+                                    <!--Name form-->
+
+                                    <div class="col-12">
+                                        <label for="pokemon_name" class="form-label">Name</label>
+                                        <input type="text" id="pokemon_name" name="Name" class="form-control" placeholder="Name of the pokemon card (example: Pikachu)" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+
+                                    <!--Price form-->
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="price" class="form-label">Price</label>
+                                        <input type="number" id="price" name="Price" class="form-control" step="0.01" min="0" placeholder="Price of the card" required>
+                                    </div>
+
+                                    <!--Colection form-->
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="colection" class="form-label">Colection</label>
+                                        <select name="Colection" id="colection" class="form-select">
+                                            <option value="" disabled selected hidden>-----</option>
+                                            <option value="PlasmaStorm">Plasma Storm</option>
+                                            <option value="LegendaryTreasures">Legendary Trasures</option>
+                                            <option value="151">Colección 151</option>
+                                            <option value="BlackBolt">Black Bolt</option>
+                                            <option value="ParadoxRift">Paradox Rift</option>
+                                            <option value="CrownZenith">Crown Zenith</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+
+                                    <!--Image form-->
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="image" class="form-label">Image URL</label>
+                                        <input type="text" id="image" name="Image" class="form-control" placeholder="URL">
+                                    </div>
+
+                                    <!--Release date form-->
+
+                                    <div class="col-12 col-md-6">
+                                        <label for="release_date" class="form-label">Release date</label>
+                                        <input type="date" id="release_date" name="Release_date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+
+                                    <!--Illustrator form-->
+
+                                    <div class="col-12">
+                                        <label for="illustrator" class="form-label">Illustrator</label>
+                                        <input type="text" id="illustrator" name="Illustrator" class="form-control" placeholder="Name of illustrator">
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <!--Canecel and save buttons-->
+                                    
+                                    <div class="col-12 d-flex justify-content-between">
+                                        <a href="index.html" class="btn btn-secondary">Cancel</a>
+                                        <button type="submit" class="btn btn-primary save-btn">Save</button> <!--Not implemented yet-->
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group">  
-                        <label for ="price">Price</label>
-                        <input type="number" id="price" name="Price" step="0.01" min="0" placeholder="Price of the card">
-                    </div>
-                    <div class="form-group">
-                        <label for ="colection">Colection</label>
-                        <select name ="Colection" id = "colection">
-                            <option value="" disabled selected hidden>-----</option>
-                            <option value="PlasmaStorm">Plasma Storm</option>
-                            <option value="LegendaryTreasures">Legendary Trasures</option>
-                            <option value="151">Colección 151</option>
-                            <option value="BlackBolt">Black Bolt</option>
-                            <option value="ParadoxRift">Paradox Rift</option>
-                            <option value="CrownZenith">Crown Zenith</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="image">Image URL</label>
-                        <input type="text" id="image" name="Image" placeholder="URL">
-                    </div>
-                    <div class="form-group">
-                        <label for="release_date">Release_date</label>
-                        <input type="date" id="release_date" name="Release_date">
-                    </div>
-                    <div class="form-group">
-                        <label for="illustrator">Illustrator</label>
-                        <input type="text" id="illustrator" name="Illustrator" placeholder="Name of the card's illustrator">
-                    </div>
-                    <div class="form-group">
-                        <input type="button" value="Cancel" onclick="window.location.href='index.html'">
-                        <input type="submit" value="Save"> <!--Not implemented yet-->
-                    </div>
-                </form>
+                </div>
+                </div>
             </div>
         </div>
     </main>
